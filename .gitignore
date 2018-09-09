@@ -1,17 +1,17 @@
-/*.iml
-/.idea
-/.tmp
-/.dev
-/.iconfont
-/__\[gruntbuild\]
-/__\[viftf\]
-/_assets
-app/resources/bower_components
-/bower_components
+# Generated Files
+/coverage
 /dist
-/nbproject
-/node_modules
-/npm-debug.log
+/watch
+*.log
+
+# Dependencies
+node_modules/
+
+# System Files
 .DS_Store
-/typings
-yarn-error.log
+Thumbs.db
+
+# IDEs and Development
+.idea
+.editorconfig
+/biotope-build.config.js

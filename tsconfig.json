@@ -1,29 +1,10 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"jsx": "React",
-		"module": "CommonJS",
-		"moduleResolution": "Node",
-		"noImplicitAny": true,
-		"sourceMap": true,
-		"suppressImplicitAnyIndexErrors": true,
-		"allowSyntheticDefaultImports": true,
-		"target": "ES5"
-	},
-	"typeRoots": [
-		"node_modules/@types"
-	],
-	"types": [
-		"react",
-		"react-dom",
-		"jquery"
-	],
-	"exclude": [
-		"node_modules",
-		"patterns",
-		"test",
-		"dist",
-		".tmp",
-		"**/*.spec.ts"
-	]
+  "extends": "./node_modules/@biotope/build/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "services": ["./src/services"]
+    }
+  }
 }
