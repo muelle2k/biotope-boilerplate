@@ -1,0 +1,18 @@
+
+@mixin host($componentName) {
+  .host {
+    box-sizing: border-box;
+    overflow: auto;
+    display: block;
+    @content;
+  }
+}
+
+@mixin reset {
+  html,
+  body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+}

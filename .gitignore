@@ -2,6 +2,7 @@
 /coverage
 /dist
 /watch
+/.env
 *.log
 
 # Dependencies
@@ -12,6 +13,6 @@ node_modules/
 Thumbs.db
 
 # IDEs and Development
-.idea
-.editorconfig
-/biotope-build.config.js
+/.idea
+/.editorconfig
+/*.js
