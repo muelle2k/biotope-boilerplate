@@ -20,9 +20,9 @@ export class BiotopeHeader {
     fetch('/resources/example.json')
       .then(response => response.ok && response.json() || { text: 'Oops…' })
       .then(({ text }: BiotopeHeaderData) => this.text = text)
+      .then(this.render.bind(this))
       // tslint:disable-next-line:no-console
-      .catch(console.error)
-      .then(this.render.bind(this));
+      .catch(console.error);
   }
 
   public render() {

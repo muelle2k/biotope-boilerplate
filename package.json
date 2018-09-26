@@ -1,7 +1,7 @@
 {
   "name": "biotope",
   "title": "Biotope - The Frontend Ecosystem Framework",
-  "version": "7.0.0-alpha2",
+  "version": "7.0.0-alpha3",
   "description": "Modern HTML5 UI Framework",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "yarn build && yarn serve",
+    "start": "yarn build && yarn serve:open",
     "build": "biotope-build compile",
     "build:dev": "yarn build --environment dev",
     "build:prod": "yarn build --environment prod",
@@ -20,14 +20,11 @@
     "test": "biotope-build test",
     "serve": "biotope-build serve",
     "serve:open": "yarn serve --open",
-    "serve:prod": "biotope-build serve --production"
-  },
-  "engines": {
-    "node": ">=8.0.0",
-    "yarn": ">=1.4.0"
+    "serve:prod": "yarn serve --production"
   },
   "dependencies": {
-    "@biotope/build": "tiagomapmarques/biotope-build#v7",
-    "load-entry": "~1.1"
+    "@biotope/build": "biotope/biotope-build#v7",
+    "load-entry": "~1.1",
+    "whatwg-fetch": "~3.0"
   }
 }
