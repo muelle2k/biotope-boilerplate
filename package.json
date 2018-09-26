@@ -5,7 +5,7 @@
   "description": "Modern HTML5 UI Framework",
   "repository": {
     "type": "git",
-    "url": "https://github.com/biotope/biotope.git"
+    "url": "https://github.com/biotope/biotope-boilerplate.git"
   },
   "license": "MIT",
   "scripts": {

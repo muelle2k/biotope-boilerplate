@@ -564,7 +564,7 @@
 
 "@biotope/build@biotope/biotope-build#v7":
   version "7.0.0-alpha3"
-  resolved "https://codeload.github.com/biotope/biotope-build/tar.gz/377385c87805631b76fda45bbffe656225e83023"
+  resolved "https://codeload.github.com/biotope/biotope-build/tar.gz/fc002f9bd7006abc30c14463ed84d12ed9d6f46f"
   dependencies:
     "@babel/core" "~7.1"
     "@babel/plugin-proposal-class-properties" "~7.1"

@@ -3,6 +3,7 @@
 /dist
 /watch
 /.env
+/*.js
 *.log
 
 # Dependencies
@@ -13,6 +14,8 @@ node_modules/
 Thumbs.db
 
 # IDEs and Development
-/.idea
-/.editorconfig
-/*.js
+.idea
+.vscode
+.editorconfig
+/.env
+/docker-compose.yml
