@@ -2,7 +2,6 @@
 /coverage
 /dist
 /watch
-/.env
 /*.js
 *.log
 

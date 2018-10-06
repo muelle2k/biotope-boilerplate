@@ -3,8 +3,8 @@ import { Options } from '@biotope/build';
 const options: Options = {
   webpack: {
     alias: {
-      '^components': './src/components',
-      '^services$': './src/services/index.js',
+      '^components$': './src/components/index.ts',
+      '^services$': './src/services/index.ts',
       '^theme$': './src/theme/index.scss',
     },
   },

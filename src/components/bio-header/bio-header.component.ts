@@ -1,11 +1,11 @@
 import { ProjectService } from 'services';
-import * as style from './header.style';
+import * as style from './bio-header.style';
 
-interface BiotopeHeaderData {
+interface BioHeaderData {
   text: string;
 }
 
-export class BiotopeHeader {
+export class BioHeader {
   private rootId: string;
   private text: string;
 
@@ -19,7 +19,7 @@ export class BiotopeHeader {
   public created() {
     fetch('/resources/example.json')
       .then(response => response.ok && response.json() || { text: 'Oops…' })
-      .then(({ text }: BiotopeHeaderData) => this.text = text)
+      .then(({ text }: BioHeaderData) => this.text = text)
       .then(this.render.bind(this))
       // tslint:disable-next-line:no-console
       .catch(console.error);
