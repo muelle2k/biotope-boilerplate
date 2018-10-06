@@ -634,8 +634,8 @@
     to-fast-properties "^2.0.0"
 
 "@biotope/build@biotope/biotope-build#v7":
-  version "7.0.0-alpha3.3"
-  resolved "https://codeload.github.com/biotope/biotope-build/tar.gz/11b7662a1216292d192ab34c4ca26f057b5155e7"
+  version "7.0.0-alpha3.4"
+  resolved "https://codeload.github.com/biotope/biotope-build/tar.gz/c27e5acb710a9806363c4eab2826dd5a2df62d63"
   dependencies:
     "@babel/core" "~7.1"
     "@babel/plugin-proposal-class-properties" "~7.1"
