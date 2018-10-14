@@ -7,6 +7,7 @@ interface BioHeaderData {
 
 export class BioHeader {
   private rootId: string;
+
   private text: string;
 
   constructor(rootId: string) {
@@ -34,7 +35,11 @@ export class BioHeader {
             This is @biotope
           </h1>
           <p class="${style.paragraph}">
-            v${ProjectService.getVersion()}${this.text ? ` says "${this.text}"` : ''}
+            @biotope/boilerplate v${ProjectService.getBoilerplateVersion()} and
+            @biotope/build v${ProjectService.getBuildVersion()} say:
+          </p>
+          <p class="${style.paragraph}">
+            ${this.text}
           </p>
         </div>
       `;

@@ -1,9 +1,13 @@
 
+@mixin __host-base {
+  box-sizing: border-box;
+  overflow: auto;
+  display: block;
+}
+
 @mixin host($componentName) {
   .host {
-    box-sizing: border-box;
-    overflow: auto;
-    display: block;
+    @include __host-base;
     @content;
   }
 }
