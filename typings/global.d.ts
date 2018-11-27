@@ -3,3 +3,11 @@
 
 declare const ENVIRONMENT: string;
 declare const ROOTID: string;
+
+// tslint:disable-next-line:no-namespace
+declare namespace JSX {
+  interface IntrinsicElements {
+    // tslint:disable-next-line:no-any
+    'bio-header': any;
+  }
+}

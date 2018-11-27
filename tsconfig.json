@@ -1,6 +1,7 @@
 {
   "extends": "./node_modules/@biotope/build/tsconfig.base.json",
   "compilerOptions": {
+    "jsx": "react",
     "baseUrl": ".",
     "paths": {
       "components": ["./src/components"],

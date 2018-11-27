@@ -23,8 +23,15 @@
     "serve:prod": "yarn serve --production"
   },
   "dependencies": {
+    "@babel/preset-react": "~7.0",
     "@biotope/build": "biotope/biotope-build#v7",
+    "@biotope/element": "~2.0",
+    "@types/react": "~16.7",
+    "@types/react-dom": "~16.0",
+    "@webcomponents/webcomponentsjs": "~2.2",
     "load-entry": "~1.1",
+    "react": "~16.6",
+    "react-dom": "~16.6",
     "whatwg-fetch": "~3.0"
   }
 }
