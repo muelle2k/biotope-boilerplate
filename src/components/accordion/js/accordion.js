@@ -27,9 +27,6 @@
 
 	// methods
 	var methods = {
-		// content: 'accordion__content',
-		// opened: 'accordion__content--opened ',
-
 		init: function () {
 			// your init is goes here
 			this.myFunction();
