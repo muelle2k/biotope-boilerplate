@@ -27,6 +27,9 @@
 
 	// methods
 	var methods = {
+		// content: 'accordion__content',
+		// opened: 'accordion__content--opened ',
+
 		init: function () {
 			// your init is goes here
 			this.myFunction();
@@ -34,11 +37,11 @@
 
 		myFunction: function () {
 			console.log('boilerplate - myFunction was executed');
-			$('.accordion__text').hide();
+
 			this.$element.on('click', function (event) {
-				console.log(event.target.closest('section'));
-				// $(event.target).closest('section').find('.accordion__content').removeClass('accordion--closed').addClass('accordion--opened');
-				$(event.target).closest('section').find('.accordion__text').slideToggle(400);
+
+				$(event.target.nextElementSibling).toggleClass('accordion__content--opened');
+
 			});
 		}
 	};

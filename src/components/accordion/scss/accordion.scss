@@ -1,39 +1,26 @@
-$primaryColor: #c5c5c7;
-$secondaryColor: #e5e5e7;
-
-.col {
-	margin-top: 0
-}
+$primaryColor: #e7e5e5;
+$secondaryColor: #ffffff;
 
 .accordion {
-	&__button {
+	&__title {
 		width: 100%;
 		border: none;
 		background: $primaryColor;
 		padding: 10px 20px;
-		border-bottom: 1px solid white,
+		border-bottom: 1px solid $secondaryColor;
+		text-align: center;
+		font-size: 18px;
 	}
 
 	&__content {
-		padding: 0 10px;
-	}
-
-	&__text {
-		font-size: 16px;
-	}
-
-	&--opened {
-		max-height: 50px;
-		transition: 0.5s ease-out;
-	}
-
-	&--closed {
-		transition: 0.5s ease-in;
+		transition: max-height 0.25s ease-in;
 		max-height: 0;
+		overflow: hidden;
 
-		p {
-			max-height: 0;
-			margin: 0;
+		&--opened {
+			max-height: 80px;
 		}
 	}
+
+
 }
