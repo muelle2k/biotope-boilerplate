@@ -1,0 +1,39 @@
+$primaryColor: #c5c5c7;
+$secondaryColor: #e5e5e7;
+
+.col {
+	margin-top: 0
+}
+
+.accordion {
+	&__button {
+		width: 100%;
+		border: none;
+		background: $primaryColor;
+		padding: 10px 20px;
+		border-bottom: 1px solid white,
+	}
+
+	&__content {
+		padding: 0 10px;
+	}
+
+	&__text {
+		font-size: 16px;
+	}
+
+	&--opened {
+		max-height: 50px;
+		transition: 0.5s ease-out;
+	}
+
+	&--closed {
+		transition: 0.5s ease-in;
+		max-height: 0;
+
+		p {
+			max-height: 0;
+			margin: 0;
+		}
+	}
+}
