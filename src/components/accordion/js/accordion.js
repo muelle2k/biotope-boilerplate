@@ -28,8 +28,6 @@
 
 	// methods
 	var methods = {
-
-
 		init() {
 			// your init is goes here
 			this.myFunction();
@@ -37,10 +35,8 @@
 
 		myFunction() {
 			let panels = (this.element).querySelectorAll('.accordion__panel');
-			console.log(panels);
 			for (let i = 0; i < panels.length; i++) {
 				panels[i].addEventListener('click', (event) => {
-					console.log(event);
 					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
 				});
 			}
