@@ -34,12 +34,6 @@
 
 		myFunction: function () {
 			console.log('boilerplate - myFunction was executed');
-
-			this.$element.on('click', function (event) {
-
-				$(event.target.nextElementSibling).toggleClass('accordion__content--opened');
-
-			});
 		}
 	};
 
