@@ -20,6 +20,7 @@
 
 	// The actual plugin constructor
 	function Plugin(element, options) {
+		this.element = element;
 		this.$element = $(element);
 		this.options = $.extend({}, defaults, options);
 		this.init();
@@ -27,7 +28,7 @@
 
 	// methods
 	var methods = {
-		panels: document.querySelectorAll('.accordion__panel'),
+
 
 		init() {
 			// your init is goes here
@@ -35,9 +36,11 @@
 		},
 
 		myFunction() {
-			console.log('boilerplate - myFunction was executed');
-			for (let i = 0; i < this.panels.length; i++) {
-				this.panels[i].addEventListener('click', (event) => {
+			let panels = (this.element).querySelectorAll('.accordion__panel');
+			console.log(panels);
+			for (let i = 0; i < panels.length; i++) {
+				panels[i].addEventListener('click', (event) => {
+					console.log(event);
 					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
 				});
 			}
