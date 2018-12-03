@@ -35,11 +35,11 @@
 
 		myFunction() {
 			let panels = (this.element).querySelectorAll('.accordion__panel');
-			for (let i = 0; i < panels.length; i++) {
-				panels[i].addEventListener('click', (event) => {
+			panels.forEach(element => {
+				element.addEventListener('click', (event) => {
 					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
 				});
-			}
+			});
 		}
 	};
 
