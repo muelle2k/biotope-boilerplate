@@ -27,15 +27,23 @@
 
 	// methods
 	var methods = {
-		init: function () {
+		panels: document.querySelectorAll('.accordion__panel'),
+
+		init() {
 			// your init is goes here
 			this.myFunction();
 		},
 
-		myFunction: function () {
+		myFunction() {
 			console.log('boilerplate - myFunction was executed');
+			for (let i = 0; i < this.panels.length; i++) {
+				this.panels[i].addEventListener('click', (event) => {
+					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
+				});
+			}
 		}
 	};
+
 
 	// build
 	$.extend(Plugin.prototype, methods);
