@@ -3,8 +3,10 @@
 
 	biotope.configuration.set('initElementFunctions', function () {
 		var $elementsWithDataInit = $('[data-init]');
-		$elementsWithDataInit.each(function() {
+		$elementsWithDataInit.each(function () {
 			if ($(this).data('init')) {
+				console.log(this);
+
 				var initFunction = eval($(this).attr('data-init')); // jshint ignore:line
 				initFunction($(this));
 			}
