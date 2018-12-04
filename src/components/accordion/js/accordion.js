@@ -14,9 +14,7 @@
 	'use strict';
 
 	var pluginName = 'accordion',
-		defaults = {
-			foo: 'bar'
-		};
+		defaults = {};
 
 	// The actual plugin constructor
 	function Plugin(element, options) {
@@ -29,12 +27,11 @@
 	// methods
 	var methods = {
 		init() {
-			// your init is goes here
-			this.myFunction();
+			this.toggleElement();
 		},
 
-		myFunction() {
-			let panels = (this.element).querySelectorAll('.accordion__panel');
+		toggleElement() {
+			let panels = this.element.querySelectorAll('.accordion__panel');
 			panels.forEach(element => {
 				element.addEventListener('click', (event) => {
 					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
