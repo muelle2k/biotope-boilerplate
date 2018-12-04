@@ -1,0 +1,26 @@
+$primaryColor: #e7e5e5;
+$secondaryColor: #ffffff;
+
+.accordion {
+	&__title {
+		width: 100%;
+		border: none;
+		background: $primaryColor;
+		padding: 10px 20px;
+		border-bottom: 1px solid $secondaryColor;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	&__content {
+		transition: max-height 0.25s ease-in;
+		max-height: 0;
+		overflow: hidden;
+
+		&--opened {
+			max-height: 120px;
+		}
+	}
+
+
+}
