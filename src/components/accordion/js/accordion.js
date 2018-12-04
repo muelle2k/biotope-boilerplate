@@ -14,9 +14,7 @@
 	'use strict';
 
 	var pluginName = 'accordion',
-		defaults = {
-			foo: 'bar'
-		};
+		defaults = {};
 
 	// The actual plugin constructor
 	function Plugin(element, options) {
@@ -28,17 +26,13 @@
 	// methods
 	var methods = {
 		init: function () {
-			// your init is goes here
-			this.myFunction();
+			this.toggleElement();
 		},
 
-		myFunction: function () {
-			console.log('boilerplate - myFunction was executed');
-
+		toggleElement: function () {
 			this.$element.on('click', function (event) {
-
-				$(event.target.nextElementSibling).toggleClass('accordion__content--opened');
-
+				$(event.target.parentElement).addClass('accordion__panel--opened');
+				$('.accordion__panel').not($(event.target.parentElement)).removeClass('accordion__panel--opened');
 			});
 		}
 	};
