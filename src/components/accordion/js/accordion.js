@@ -31,7 +31,7 @@
 
 		toggleElement: function () {
 			this.$element.on('click', function (event) {
-				$(event.target.parentElement).addClass('accordion__panel--opened');
+				$(event.target.parentElement).toggleClass('accordion__panel--opened');
 				$('.accordion__panel').not($(event.target.parentElement)).removeClass('accordion__panel--opened');
 			});
 		}
