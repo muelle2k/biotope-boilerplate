@@ -32,11 +32,29 @@
 
 		toggleElement() {
 			let panels = this.element.querySelectorAll('.accordion__panel');
-			panels.forEach(element => {
-				element.addEventListener('click', (event) => {
-					event.target.nextElementSibling.classList.toggle('accordion__content--opened');
+
+			for (let i = 0; i < panels.length; i++) {
+				panels[i].addEventListener('click', (e) => {
+					e.target.parentElement.classList.toggle('accordion__panel--opened');
+
+					panels.forEach(elem => {
+						if (e.target.parentElement !== elem) {
+							elem.classList.remove('accordion__panel--opened');
+						}
+					});
 				});
-			});
+			}
+
+			/*panels.forEach(element => {
+				element.addEventListener('click', (e) => {
+					e.target.parentElement.classList.toggle('accordion__panel--opened');
+					panels.forEach(elem => {
+						if (e.target.parentElement !== elem) {
+							elem.classList.remove('accordion__panel--opened');
+						}
+					});
+				});
+			});*/
 		}
 	};
 
